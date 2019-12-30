@@ -1,0 +1,44 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.divider{
+  width: 100%;
+  height: 2px;
+  background: #edf2f7;
+  margin: 1em 0;
+}
+
+pre > code {
+  border-radius: .2em;
+  font-family: "Monaco", "Consolas", "Ubuntu Mono", "Courier New", monospace;
+}
+
+.hljs{
+  padding: 1em !important;
+}
+
+.icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  color: #a0aec0;
+
+  &:hover{
+    color: #4a5568;
+  }
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1026px) {
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+}

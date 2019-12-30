@@ -1,0 +1,46 @@
+.btn{
+  font-size: 14pt;
+  padding: .5em 1em;
+  margin: .3em 0;
+  border: none;
+  border-radius: .2em;
+  cursor: pointer;
+  display: inline-block;
+
+  &:focus{
+    outline: none;
+  }
+
+  &:hover{
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  }
+
+  &.btn-primary{
+    color: #ffffff;
+    background: map-get($colors, 'primary');
+  }
+
+  &.btn-secondary{
+    color: map-get($colors, 'dark');
+    background: map-get($colors, 'secondary');
+  }
+
+  &.btn-danger{
+    color: #ffffff;
+    background: map-get($colors, 'danger');
+  }
+
+  &.btn-text{
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &.btn-small{
+    font-size: 10pt;
+  }
+}
+
+a{
+  color: map-get($colors, 'primary');
+  cursor: pointer;
+}

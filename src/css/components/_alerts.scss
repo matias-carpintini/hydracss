@@ -1,0 +1,14 @@
+.alert{
+  width: 100%;
+  background: map-get($colors, 'secondary');
+  color: map-get($colors, 'dark');
+  margin: 1em 0;
+  border-radius: .2em;
+  padding: 1em;
+
+  &.alert-danger{
+    background: map-get($colors, 'danger');
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.8);
+    color: map-get($colors, 'danger');
+  }
+}

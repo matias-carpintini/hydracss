@@ -1,0 +1,37 @@
+.form-group{
+  margin: 1em 0;
+}
+
+.label{
+  font-size: 12pt;
+  color: map-get($colors, 'dark');
+  font-weight: bold;
+  display: block;
+  margin: 0 0 .5em 0;
+}
+
+.input, .select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  font-size: 12pt;
+  padding: .5em;
+  border: .1em solid map-get($colors, 'secondary');
+  border-radius: .2em;
+  color: map-get($colors, 'dark');
+  display: block;
+  width: 100%;
+
+  &:focus{
+    border: .1em solid map-get($colors, 'primary');
+    outline: none;
+  }
+}
+
+.select{
+  background: url(https://ionicons.com/ionicons/svg/ios-arrow-down.svg) no-repeat right;
+  -webkit-appearance: none;
+  background-position-x: 98.5%;
+  background-size: 12pt;
+}

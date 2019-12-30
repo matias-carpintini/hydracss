@@ -1,0 +1,17 @@
+$colors: (
+  'primary': #6246ea,
+  'secondary': #d1d1e9,
+  'light': #fffffe,
+  'dark': #2b2c34,
+  'danger': #e45858
+);
+
+@each $key, $value in $colors{
+  .text-#{ $key }{
+    color: $value;
+  }
+}
+
+.fill-current{
+  fill: currentColor !important;
+}
