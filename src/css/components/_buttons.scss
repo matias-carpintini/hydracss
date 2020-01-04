@@ -16,17 +16,17 @@
   }
 
   &.btn-primary{
-    color: #ffffff;
+    color: $white;
     background: map-get($colors, 'primary');
   }
 
   &.btn-secondary{
-    color: map-get($colors, 'dark');
+    color: $dark;
     background: map-get($colors, 'secondary');
   }
 
   &.btn-danger{
-    color: #ffffff;
+    color: $white;
     background: map-get($colors, 'danger');
   }
 

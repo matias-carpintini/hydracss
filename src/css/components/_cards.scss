@@ -1,7 +1,7 @@
 .card{
   width: 100%;
   background: map-get($colors, 'secondary');
-  color: map-get($colors, 'dark');
+  color: $dark;
   font-size: 12pt;
   margin: 1em 0;
   border-radius: .2em;

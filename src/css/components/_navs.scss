@@ -1,10 +1,14 @@
 .nav{
   padding: 1.5em 2em;
   font-size: 12pt;
-  border-bottom: 1px solid #edf2f7;
-  background: #ffffff;
   margin: 0 0 4em 0;
   z-index: 1;
+  
+  @include themify($themes){
+    border-bottom: 1px solid themed('stroke');
+    color: themed('black');
+    background: themed('white');
+  }
 
   .logo{
     text-decoration: none;
@@ -31,7 +35,6 @@
 .sidemenu{
   padding: 0 2em;
   color: #4a5568;
-  background: #ffffff;
   
   .menu{  
     list-style: none;

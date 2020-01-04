@@ -4,7 +4,7 @@
 
 .label{
   font-size: 12pt;
-  color: map-get($colors, 'dark');
+  color: $dark;
   font-weight: bold;
   display: block;
   margin: 0 0 .5em 0;
@@ -19,7 +19,7 @@
   padding: .5em;
   border: .1em solid map-get($colors, 'secondary');
   border-radius: .2em;
-  color: map-get($colors, 'dark');
+  color: $dark;
   display: block;
   width: 100%;
 
