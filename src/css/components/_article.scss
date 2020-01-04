@@ -1,0 +1,31 @@
+.article{
+  line-height: 1.5;
+
+  .article-title {
+    @extend .text-5xl;
+    line-height: 1;
+    margin: 0;
+  }
+  .article-meta {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: map-get($colors, 'muted');
+    a {
+      color: map-get($colors, 'muted');
+      text-decoration: none;
+      &:hover {
+        color: map-get($colors, 'global');
+      }
+    }
+  }
+  .article-lead {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  p+p {
+    margin-top: 20px;
+  }
+}
+
