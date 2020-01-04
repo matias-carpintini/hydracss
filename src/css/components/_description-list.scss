@@ -1,0 +1,22 @@
+.description-list{
+
+  dt {
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:nth-child(n+2) {
+      margin-top: $global-margin;
+    }
+  }
+}
+
+.description-list-divider{
+  dt{
+    &:nth-child(n+2) {
+      margin-top: $global-margin;
+      padding-top: $global-margin;
+      border-top: 1px solid $global-border;
+    }
+  }
+}

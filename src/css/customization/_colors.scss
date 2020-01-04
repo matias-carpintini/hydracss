@@ -1,8 +1,9 @@
-$dark: #2b2c34;
+/*$dark: #2b2c34;
 $black: #000000;
 $light: #fffffe;
 $white: #ffffff;
 $global: #222222;
+*/
 
 $themes: (
   light: (
@@ -10,7 +11,7 @@ $themes: (
     'black': $black,
     'light': $light,
     'dark': $dark,
-    'global': $global,
+    'global': $global-color,
     'stroke': #edf2f7,
     'invert': invert(0),
   ),
@@ -57,18 +58,18 @@ $themes: (
 
 body{
   @include themify($themes) {
-    color: themed('global');
+    color: themed('global-color');
     background-color: themed('white');
   }
 }
 
-$colors: (
+/*$colors: (
   'primary': #6246ea,
   'secondary': #d1d1e9,
   'danger': #e45858,
   'global': #666666,
   'muted': #999999
-);
+);*/
 
 @each $key, $value in $colors{
   .text-#{ $key }{

@@ -1,3 +1,4 @@
+@import 'customization/variables';
 @import 'customization/colors';
 @import 'customization/typography';
 
@@ -11,5 +12,9 @@
 @import 'components/cards';
 @import 'components/alerts';
 @import 'components/modals';
+
+@import 'components/article';
+@import 'components/list';
+@import 'components/description-list';
 
 @import 'utilities/atomic';

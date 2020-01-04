@@ -1,0 +1,104 @@
+// BREAKPOINTS
+// ========================================================================
+
+$breakpoint-small: 640px !default;
+$breakpoint-medium: 960px !default;
+$breakpoint-large: 1200px !default;
+$breakpoint-xlarge: 1600px !default;
+$breakpoint-xsmall-max: ($breakpoint-small - 1) !default;
+$breakpoint-small-max: ($breakpoint-medium - 1) !default;
+$breakpoint-medium-max: ($breakpoint-large - 1) !default;
+$breakpoint-large-max: ($breakpoint-xlarge - 1) !default;
+
+
+
+// COLORS
+// ========================================================================
+
+$dark: #2b2c34;
+$black: #000000;
+$light: #fffffe;
+$white: #ffffff;
+$global-color: #333;
+$global-border: #e5e5e5;
+
+$colors: (
+  'primary': #6246ea,
+  'secondary': #d1d1e9,
+  'danger': #e45858,
+  'muted': #f8f8f8
+);
+
+// GLOBAL
+// ========================================================================
+
+// Typography
+$global-font-family: "Poppins";
+
+// Size
+$global-font-size: 16px !default;
+$global-line-height: 1.5 !default;
+$global-small-font-size: 0.875rem !default;
+$global-medium-font-size: 1.25rem !default;
+$global-large-font-size: 1.5rem !default;
+$global-xlarge-font-size: 2rem !default;
+$global-xxlarge-font-size: 2.625rem !default;
+
+$base-body-color: $global-color !default;
+$global-background: $white !default;
+
+$base-body-background: $global-background !default;
+$base-body-color: $global-color !default;
+
+$base-body-font-weight: normal !default;
+$base-body-line-height: $global-line-height !default;
+
+
+// LINKS
+$base-link-color: map-get($colors, 'primary') !default;
+$base-link-text-decoration: none !default;
+$base-link-hover-color: darken( $base-link-color, 15% );
+$base-link-text-decoration: none !default;
+$base-link-hover-text-decoration: underline !default;
+
+
+
+// MARGINS
+// ========================================================================
+
+// Margin base
+$global-margin: 20px !default;
+$global-medium-margin: 40px !default;
+$global-large-margin: 70px !default;
+
+// Margin extra
+$base-margin-vertical: $global-margin !default;
+
+
+
+// HEADINGS
+// ========================================================================
+
+// Headings base
+$base-heading-font-family: $global-font-family !default;
+$base-heading-font-weight: 600 !default;
+$base-heading-text-transform: none !default;
+
+// Headings size
+$base-heading-margin-top: $global-medium-margin !default;
+$base-h1-font-size-m: $global-xxlarge-font-size !default;
+$base-h1-font-size: $base-h1-font-size-m * 0.85 !default;
+$base-h1-line-height: 1.2 !default;
+$global-xlarge-font-size: 2rem !default;
+$base-h2-font-size-m: $global-xlarge-font-size !default;
+$base-h2-font-size: $base-h2-font-size-m * 0.85 !default;
+$base-h2-line-height: 1.3 !default;
+$global-large-font-size: 1.5rem !default;
+$base-h3-font-size: $global-large-font-size !default;
+$base-h3-line-height: 1.4 !default;
+$base-h4-font-size: $global-medium-font-size !default;
+$base-h4-line-height: 1.4 !default;
+$base-h5-font-size: $global-font-size !default;
+$base-h5-line-height: 1.4 !default;
+$base-h6-font-size: $global-small-font-size !default;
+$base-h6-line-height: 1.4 !default;
