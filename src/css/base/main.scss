@@ -1,7 +1,6 @@
 html{
   scroll-behavior: smooth;
 }
-
 .divider{
   width: 100%;
   height: 2px;
@@ -44,4 +43,133 @@ pre > code {
   .mobile{
     display: block;
   }
+}
+
+
+
+// BASE
+// ========================================================================
+
+html {
+  font-family: $global-font-family;
+  font-size: $global-font-size;
+  font-weight: $base-body-font-weight;
+  line-height: $base-body-line-height;
+  -webkit-text-size-adjust: 100%;
+  background: $base-body-background;
+  color: $base-body-color;
+}
+
+
+
+// LINKS
+// ========================================================================
+
+a { -webkit-text-decoration-skip: objects; }
+a:active,
+a:hover { outline: none; }
+
+a {
+  color: $base-link-color;
+  text-decoration: $base-link-text-decoration;
+  cursor: pointer;
+
+  &:hover {
+    color: $base-link-hover-color;
+    text-decoration: $base-link-hover-text-decoration;
+  }
+}
+
+
+
+// BLOCK ELEMENTS
+// ========================================================================
+
+// Margins
+p,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure { margin: 0 0 $base-margin-vertical 0; }
+
+/* Add margin if adjacent element */
+* + p,
+* + ul,
+* + ol,
+* + dl,
+* + pre,
+* + address,
+* + fieldset,
+* + figure { margin-top: $base-margin-vertical; }
+
+// SELECTIONS
+// ========================================================================
+::selection {
+  background-color: map-get($colors, 'primary');
+  color: $white;
+}
+
+
+
+// HEADINGS
+// ========================================================================
+
+h1, .hy-h1,
+h2, .hy-h2,
+h3, .hy-h3,
+h4, .hy-h4,
+h5, .hy-h5,
+h6, .hy-h6 {
+  margin: 0 0 $base-margin-vertical 0;
+  font-family: $base-heading-font-family;
+  font-weight: $base-heading-font-weight;
+  text-transform: $base-heading-text-transform;
+}
+
+// Add margin if adjacent element
+* + h1, * + .hy-h1,
+* + h2, * + .hy-h2,
+* + h3, * + .hy-h3,
+* + h4, * + .hy-h4,
+* + h5, * + .hy-h5,
+* + h6, * + .hy-h6 { margin-top: $base-heading-margin-top; }
+
+// Sizes
+h1, .hy-h1 {
+  font-size: $base-h1-font-size;
+  line-height: $base-h1-line-height;
+}
+
+h2, .hy-h2 {
+  font-size: $base-h2-font-size;
+  line-height: $base-h2-line-height;
+}
+
+h3, .hy-h3 {
+  font-size: $base-h3-font-size;
+  line-height: $base-h3-line-height;
+}
+
+h4, .hy-h4 {
+  font-size: $base-h4-font-size;
+  line-height: $base-h4-line-height;
+}
+
+h5, .hy-h5 {
+  font-size: $base-h5-font-size;
+  line-height: $base-h5-line-height;
+}
+
+h6, .hy-h6 {
+  font-size: $base-h6-font-size;
+  line-height: $base-h6-line-height;
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: $breakpoint-medium) {
+  h1, .hy-h1 { font-size: $base-h1-font-size-m; }
+  h2, .hy-h2 { font-size: $base-h2-font-size-m; }
 }

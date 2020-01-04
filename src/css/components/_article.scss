@@ -1,14 +1,13 @@
 .article{
-  line-height: 1.5;
 
   .article-title {
-    @extend .text-5xl;
+    font-size: $global-xxlarge-font-size;
     line-height: 1;
     margin: 0;
   }
   .article-meta {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: $global-margin;
+    margin-bottom: $global-margin;
     color: map-get($colors, 'muted');
     a {
       color: map-get($colors, 'muted');
@@ -19,13 +18,10 @@
     }
   }
   .article-lead {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 1.3rem;
+    margin-top: $global-margin;
+    margin-bottom: $global-margin;
+    font-size: $global-large-font-size;
     font-weight: 300;
-  }
-  p+p {
-    margin-top: 20px;
   }
 }
 

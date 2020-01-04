@@ -1,0 +1,84 @@
+// Base
+.list{
+  padding: 0;
+  list-style: none;
+
+  li:nth-child(n+2) {
+    margin-top: 10px;
+  }
+  ul {
+    margin: 0;
+    margin-top: 10px;
+    padding-left: 30px;
+    list-style: none;
+  }
+}
+
+// Bullet modifier
+.list-bullet {
+  li {
+    position: relative;
+    padding-left: calc(1.5em + 10px);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.5em;
+      height: 1.5em;
+      background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23666%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      display: block;
+    }
+  }
+}
+
+// Divider modifier
+.list-divider{
+  li:nth-child(n+2) {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid $global-border;
+  }
+}
+
+// Stripped modifier
+.list-striped{
+  li {
+    padding: 10px 10px;
+    &:nth-of-type(odd) {
+      border-top: 1px solid $global-border;
+      border-bottom: 1px solid $global-border;
+      background: map-get($colors, 'muted');
+    }
+    &:nth-child(n+2) {
+      margin-top: 0;
+    }
+  }
+}
+
+// Large
+.list-large{
+  li{
+    &:nth-child(n+2) {
+      margin-top: $global-margin;
+    }
+  }
+  &.list-divider{
+    li{
+      &:nth-child(n+2) {
+        margin-top: $global-margin;
+        padding-top: $global-margin;
+      }
+    }
+  }
+  &.list-striped{
+    li {
+      padding: $global-margin 10px;
+      &:nth-child(n+2) {
+        margin-top: 0;
+      }
+    }
+  }
+}
