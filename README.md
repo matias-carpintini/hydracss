@@ -14,4 +14,4 @@ For casual chit-chat with others using the framework:
 
 ## Contributing
 
-If you're interested in contributing to Hydra CSS, please read our [contributing docs](https://github.com/matias-carpintini/hydracss/blob/master/.github/CONTRIBUTING.md) **before submitting a pull request**.
+If you're interested in contributing to Hydra CSS, please read our [contributing docs](https://github.com/matias-carpintini/hydracss/blob/master/CONTRIBUTING.md) **before submitting a pull request**.
