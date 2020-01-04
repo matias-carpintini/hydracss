@@ -41,12 +41,15 @@
 }
 
 .modal-container {
-  background-color: map-get($colors, 'light');
   padding: 30px;
   max-width: 500px;
   max-height: 100vh;
   border-radius: .2em;
   overflow-y: auto;
+
+  @include themify($themes){
+    background: themed('light');
+  }
 }
 
 .modal-header {
@@ -82,7 +85,10 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
+
+  @include themify($themes){
+    color: themed('dark');
+  }
 }
 
 @keyframes mmfadeIn {

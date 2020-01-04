@@ -1,4 +1,4 @@
-$(document).ready(function(){  
+$(document).ready(function(){
   $('.modal-open').on('click', function(ev){
     ev.preventDefault();
     modalId = $(this).data('modal-id');
@@ -27,5 +27,14 @@ $(document).ready(function(){
     sidemenu = document.getElementById(sidemenuId);
 
     $(sidemenu).toggleClass('open');
+  });
+
+  $('#switch').on('click', function(ev){
+    ev.preventDefault();
+
+    current_theme = $('html').hasClass('theme-dark') ? 'theme-dark' : 'theme-light';
+    new_theme = current_theme == 'theme-dark' ? 'theme-light' : 'theme-dark'
+
+    $('html').removeClass(current_theme).addClass(new_theme);
   });
 });

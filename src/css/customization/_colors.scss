@@ -1,14 +1,77 @@
+$dark: #2b2c34;
+$black: #000000;
+$light: #fffffe;
+$white: #ffffff;
+
+$themes: (
+  light: (
+    'white': $white,
+    'black': $black,
+    'light': $light,
+    'dark': $dark,
+    'stroke': #edf2f7,
+    'invert': invert(0),
+  ),
+  dark: (
+    'white': $black,
+    'light': $dark,
+    'black': $white,
+    'dark': $light,
+    'stroke': #16161a,
+    'invert': invert(1),
+  ),
+);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} &{
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+
+      }
+      
+      @each $key, $value in $theme-map{
+        .text-#{ $key }{
+          color: $value;
+        }
+
+        .bg-#{ $key }{
+          background: $value;
+        }
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+body{
+  @include themify($themes) {
+    color: themed('black');
+    background-color: themed('white');
+  }
+}
+
 $colors: (
   'primary': #6246ea,
   'secondary': #d1d1e9,
-  'light': #fffffe,
-  'dark': #2b2c34,
   'danger': #e45858
 );
 
 @each $key, $value in $colors{
   .text-#{ $key }{
     color: $value;
+  }
+
+  .bg-#{ $key }{
+    background: $value;
   }
 }
 
