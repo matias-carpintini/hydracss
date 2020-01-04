@@ -130,14 +130,3 @@
     transform: translateY(-10%);
   }
 }
-
-.dark{
-  
-  .modal-container{
-    background-color: map-get($colors, 'dark');
-  }
-
-  .modal-content {
-    color: map-get($colors, 'light');
-  }
-}
