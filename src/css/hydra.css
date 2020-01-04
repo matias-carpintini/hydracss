@@ -1236,6 +1236,7 @@ a {
   align-items: center; }
 
 .modal-container {
+  background-color: #fffffe;
   padding: 30px;
   max-width: 500px;
   max-height: 100vh;
