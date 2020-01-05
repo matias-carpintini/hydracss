@@ -1,22 +1,25 @@
 .article{
-
   .article-title {
     font-size: $global-xxlarge-font-size;
     line-height: 1;
     margin: 0;
   }
+
   .article-meta {
     margin-top: $global-margin;
     margin-bottom: $global-margin;
     color: map-get($colors, 'muted');
+
     a {
       color: map-get($colors, 'muted');
       text-decoration: none;
+
       &:hover {
         color: map-get($colors, 'global');
       }
     }
   }
+  
   .article-lead {
     margin-top: $global-margin;
     margin-bottom: $global-margin;

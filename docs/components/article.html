@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forms - HydraCSS</title>
+    <title>Article component - HydraCSS</title>
     
     <link rel="icon" href="../favicon.ico"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
@@ -117,33 +117,48 @@
           <p class="text-sm bold gray uppercase mt-5">COMPONENTS</p>
           <ul class="menu-links">
             <li>
-              <a href="alerts.html" class="link-reset">
-                Alerts
+              <a href="alert.html" class="link-reset">
+                Alert
               </a>
             </li>
             <li>
-              <a href="buttons.html" class="link-reset">
-                Buttons
+              <a href="article.html" class="link-reset text-black">
+                Article
               </a>
             </li>
             <li>
-              <a href="cards.html" class="link-reset">
-                Cards
+              <a href="button.html" class="link-reset">
+                Button
               </a>
             </li>
             <li>
-              <a href="forms.html" class="link-reset text-black">
-                Forms
+              <a href="card.html" class="link-reset">
+                Card
               </a>
             </li>
             <li>
-              <a href="modals.html" class="link-reset">
-                Modals
+              <a href="description_list.html" class="link-reset">
+                Description List
               </a>
             </li>
             <li>
-              <a href="navs.html" class="link-reset">
-                Navs
+              <a href="form.html" class="link-reset">
+                Form
+              </a>
+            </li>
+            <li>
+              <a href="list.html" class="link-reset">
+                List
+              </a>
+            </li>
+            <li>
+              <a href="modal.html" class="link-reset">
+                Modal
+              </a>
+            </li>
+            <li>
+              <a href="nav.html" class="link-reset">
+                Nav
               </a>
             </li>
           </ul>
@@ -151,59 +166,27 @@
       </div>
       <div class="col-xs-11 col-md-6 start-xs">
         <div class="section mb-6">
-          <a href="forms.html" class="text-3xl bold link-reset">
+          <a href="article.html" class="text-3xl bold link-reset">
             <span class="light thin text-xl">#</span>
-            Forms
+            Article
           </a>
-          <p class="text-base text-dark mt-1">Examples of building forms with HydraCSS.</p>
+          <p class="text-base text-dark mt-1">Examples of building articles with HydraCSS.</p>
           <div class="divider"></div>
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="form-group">
-                <label for="input" class="label">Label</label>
-                <input type="text" placeholder="Placeholder input" class="input" name="input">
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="form-group">
-                <label for="select" class="label">Label for select</label>
-                <select name="select" id="select" class="select">
-                  <option value="0">Select an option</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="form-group">
-                <label for="select2" class="label">Another label</label>
-                <select name="select2" id="select2" class="select">
-                  <option value="0">Select an option</option>
-                </select>
-              </div>
-            </div>
+          <div class="article mt-5">
+            <p class="article-title">Lorem ipsum dolor sit amet.</p>
+            <p class="article-meta">
+              2 hours ago -
+              <a href="#">Matias Carpintini</a>
+            </p>
+            <p class="article-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis at reprehenderit sint minima totam blanditiis ratione optio quidem dolorum?</p>
           </div>
-<pre><code class="html">&lt;div class="row"&gt;
-  &lt;div class="col-xs-12"&gt;
-    &lt;div class="form-group"&gt;
-      &lt;label for="input" class="label"&gt;Label&lt;/label&gt;
-      &lt;input type="text" placeholder="Placeholder input" class="input" name="input"&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="col-xs-12 col-md-6"&gt;
-    &lt;div class="form-group"&gt;
-      &lt;label for="select" class="label"&gt;Label for select&lt;/label&gt;
-      &lt;select name="select" id="select" class="select"&gt;
-        &lt;option value="0"&gt;Select an option&lt;/option&gt;
-      &lt;/select&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="col-xs-12 col-md-6"&gt;
-    &lt;div class="form-group"&gt;
-      &lt;label for="select2" class="label"&gt;Another label&lt;/label&gt;
-      &lt;select name="select2" id="select2" class="select"&gt;
-        &lt;option value="0"&gt;Select an option&lt;/option&gt;
-      &lt;/select&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+<pre><code class="html">&lt;div class="article"&gt;
+  &lt;p class="article-title"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+  &lt;p class="article-meta"&gt;
+    2 hours ago -
+    &lt;a href="#"&gt;Matias Carpintini&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;p class="article-lead"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis at reprehenderit sint minima totam blanditiis ratione optio quidem dolorum?&lt;/p&gt;
 &lt;/div&gt;</code></pre>
         </div>
       </div>
@@ -214,17 +197,7 @@
           <ul class="menu-links">
             <li>
               <a href="#" class="link-reset">
-                Label
-              </a>
-            </li>
-            <li>
-              <a href="#" class="link-reset">
-                Input
-              </a>
-            </li>
-            <li>
-              <a href="#" class="link-reset">
-                Select
+                Overview
               </a>
             </li>
           </ul>

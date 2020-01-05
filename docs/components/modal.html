@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alerts - HydraCSS</title>
+    <title>Modal component - HydraCSS</title>
     
     <link rel="icon" href="../favicon.ico"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
@@ -117,32 +117,47 @@
           <p class="text-sm bold gray uppercase mt-5">COMPONENTS</p>
           <ul class="menu-links">
             <li>
-              <a href="alerts.html" class="link-reset text-black">
+              <a href="alert.html" class="link-reset">
                 Alerts
               </a>
             </li>
             <li>
-              <a href="buttons.html" class="link-reset">
+              <a href="article.html" class="link-reset">
+                Article
+              </a>
+            </li>
+            <li>
+              <a href="button.html" class="link-reset">
                 Buttons
               </a>
             </li>
             <li>
-              <a href="cards.html" class="link-reset">
+              <a href="card.html" class="link-reset">
                 Cards
               </a>
             </li>
             <li>
-              <a href="forms.html" class="link-reset">
+              <a href="description_list.html" class="link-reset">
+                Description List
+              </a>
+            </li>
+            <li>
+              <a href="form.html" class="link-reset">
                 Forms
               </a>
             </li>
             <li>
-              <a href="modals.html" class="link-reset">
+              <a href="list.html" class="link-reset">
+                List
+              </a>
+            </li>
+            <li>
+              <a href="modal.html" class="link-reset text-black">
                 Modals
               </a>
             </li>
             <li>
-              <a href="navs.html" class="link-reset">
+              <a href="nav.html" class="link-reset">
                 Navs
               </a>
             </li>
@@ -151,28 +166,32 @@
       </div>
       <div class="col-xs-11 col-md-6 start-xs">
         <div class="section mb-6">
-          <a href="alerts.html" class="text-3xl bold link-reset">
+          <a href="modal.html" class="text-3xl bold link-reset">
             <span class="light thin text-xl">#</span>
-            Alerts
+            Modals
           </a>
-          <p class="text-base text-dark mt-1">Examples of building alerts with HydraCSS.</p>
+          <p class="text-base text-dark mt-1">Examples of building modals with HydraCSS.</p>
           <div class="divider"></div>
-          <div class="alert">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </div>
-
-          <div class="alert alert-danger">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </div>
-
-<pre><code class="html">&lt;!-- Normal --&gt;
-&lt;div class="alert"&gt;
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-&lt;/div&gt;
-
-&lt;!-- Danger variation --&gt;
-&lt;div class="alert alert-danger"&gt;
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <button type="button" class="btn btn-primary modal-open" data-modal-id="modal">Modal demo</button>
+<pre><code class="html">&lt;button type="button" class="btn btn-primary modal-open" data-modal-id="modal"&gt;Modal demo&lt;/button&gt;
+&lt;div class="modal" aria-hidden="true" id="modal"&gt;
+  &lt;div class="modal-overlay"&gt;
+    &lt;div class="modal-container"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;p class="modal-title"&gt;Headline 🔥&lt;/p&gt;
+        &lt;div class="modal-close"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-content"&gt;
+        &lt;p&gt;This is a completely accessible modal.&lt;/p&gt;
+        &lt;p&gt; Try hitting the &lt;code&gt;tab&lt;/code&gt; key* and notice how the focus stays within the modal itself. To close modal hit the &lt;code&gt;esc&lt;/code&gt; button, click on the overlay or just click the close button. &lt;/p&gt;
+        &lt;p&gt; &lt;small&gt;* &lt;code&gt;alt+tab&lt;/code&gt; in safari&lt;/small&gt; &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-primary btn-small"&gt;Continue&lt;/button&gt;
+        &lt;button type="button" class="btn btn-secondary btn-small modal-close"&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
         </div>
       </div>
@@ -183,15 +202,29 @@
           <ul class="menu-links">
             <li>
               <a href="#" class="link-reset">
-                Normal
-              </a>
-            </li>
-            <li>
-              <a href="#" class="link-reset">
-                Danger variation
+                Demo
               </a>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal" aria-hidden="true" id="modal">
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <div class="modal-header">
+            <p class="modal-title">Headline 🔥</p>
+            <div class="modal-close"></div>
+          </div>
+          <div class="modal-content">
+            <p>This is a completely accessible modal.</p>
+            <p> Try hitting the <code>tab</code> key* and notice how the focus stays within the modal itself. To close modal hit the <code>esc</code> button, click on the overlay or just click the close button. </p>
+            <p> <small>* <code>alt+tab</code> in safari</small> </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-small">Continue</button>
+            <button type="button" class="btn btn-secondary btn-small modal-close">Close</button>
+          </div>
         </div>
       </div>
     </div>

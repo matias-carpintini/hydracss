@@ -6,6 +6,7 @@
   li:nth-child(n+2) {
     margin-top: 10px;
   }
+
   ul {
     margin: 0;
     margin-top: 10px;
@@ -19,6 +20,7 @@
   li {
     position: relative;
     padding-left: calc(1.5em + 10px);
+
     &::before {
       content: "";
       position: absolute;
@@ -47,11 +49,17 @@
 .list-striped{
   li {
     padding: 10px 10px;
+
     &:nth-of-type(odd) {
       border-top: 1px solid $global-border;
       border-bottom: 1px solid $global-border;
-      background: map-get($colors, 'muted');
+      
+      @include themify($themes){
+        color: themed('black');
+        background: themed('light');
+      }
     }
+
     &:nth-child(n+2) {
       margin-top: 0;
     }
@@ -65,6 +73,7 @@
       margin-top: $global-margin;
     }
   }
+
   &.list-divider{
     li{
       &:nth-child(n+2) {
@@ -73,6 +82,7 @@
       }
     }
   }
+  
   &.list-striped{
     li {
       padding: $global-margin 10px;

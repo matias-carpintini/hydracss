@@ -1,10 +1,3 @@
-/*$dark: #2b2c34;
-$black: #000000;
-$light: #fffffe;
-$white: #ffffff;
-$global: #222222;
-*/
-
 $themes: (
   light: (
     'white': $white,
@@ -30,10 +23,10 @@ $themes: (
   @each $theme, $map in $themes {
     .theme-#{$theme} &{
       $theme-map: () !global;
+
       @each $key, $submap in $map {
         $value: map-get(map-get($themes, $theme), '#{$key}');
         $theme-map: map-merge($theme-map, ($key: $value)) !global;
-
       }
       
       @each $key, $value in $theme-map{
@@ -58,18 +51,10 @@ $themes: (
 
 body{
   @include themify($themes) {
-    color: themed('global-color');
+    color: themed('black');
     background-color: themed('white');
   }
 }
-
-/*$colors: (
-  'primary': #6246ea,
-  'secondary': #d1d1e9,
-  'danger': #e45858,
-  'global': #666666,
-  'muted': #999999
-);*/
 
 @each $key, $value in $colors{
   .text-#{ $key }{

@@ -55,6 +55,11 @@ sup {
 .link-reset{
   color: inherit;
   text-decoration: none;
+
+  &:hover{
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .white {
