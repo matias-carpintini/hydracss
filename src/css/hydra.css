@@ -1289,7 +1289,7 @@ template {
   display: none; }
 
 .nav {
-  padding: 1.5em 2em;
+  padding: .5em 2em;
   font-size: 12pt;
   margin: 0 0 4em 0;
   z-index: 1; }
@@ -1373,7 +1373,9 @@ template {
 
 .sidemenu {
   padding: 0 2em;
-  color: #4a5568; }
+  color: #4a5568;
+  height: 100vh;
+  overflow-y: scroll; }
   .sidemenu .menu {
     list-style: none; }
     .sidemenu .menu li svg {
@@ -1395,7 +1397,7 @@ template {
 
 @media only screen and (max-width: 1026px) {
   .nav {
-    margin: 0 0 1em 0; }
+    margin: 0 0 3em 0; }
 
   .sidemenu {
     display: none;
@@ -1403,9 +1405,68 @@ template {
     .sidemenu.open {
       padding: 4em 1em 1em 1em;
       border-bottom: 1px solid #edf2f7;
-      position: fixed;
-      top: 3.5em;
-      display: block; } }
+      top: 4em;
+      display: block; }
+      .theme-light .sidemenu.open {
+        background: #ffffff; }
+        .theme-light .sidemenu.open .text-white {
+          color: #ffffff; }
+        .theme-light .sidemenu.open .bg-white {
+          background: #ffffff; }
+        .theme-light .sidemenu.open .text-black {
+          color: #000000; }
+        .theme-light .sidemenu.open .bg-black {
+          background: #000000; }
+        .theme-light .sidemenu.open .text-light {
+          color: #fffffe; }
+        .theme-light .sidemenu.open .bg-light {
+          background: #fffffe; }
+        .theme-light .sidemenu.open .text-dark {
+          color: #2b2c34; }
+        .theme-light .sidemenu.open .bg-dark {
+          background: #2b2c34; }
+        .theme-light .sidemenu.open .text-global {
+          color: #333; }
+        .theme-light .sidemenu.open .bg-global {
+          background: #333; }
+        .theme-light .sidemenu.open .text-stroke {
+          color: #edf2f7; }
+        .theme-light .sidemenu.open .bg-stroke {
+          background: #edf2f7; }
+        .theme-light .sidemenu.open .text-invert {
+          color: invert(0); }
+        .theme-light .sidemenu.open .bg-invert {
+          background: invert(0); }
+      .theme-dark .sidemenu.open {
+        background: #000000; }
+        .theme-dark .sidemenu.open .text-white {
+          color: #000000; }
+        .theme-dark .sidemenu.open .bg-white {
+          background: #000000; }
+        .theme-dark .sidemenu.open .text-light {
+          color: #2b2c34; }
+        .theme-dark .sidemenu.open .bg-light {
+          background: #2b2c34; }
+        .theme-dark .sidemenu.open .text-black {
+          color: #ffffff; }
+        .theme-dark .sidemenu.open .bg-black {
+          background: #ffffff; }
+        .theme-dark .sidemenu.open .text-dark {
+          color: #fffffe; }
+        .theme-dark .sidemenu.open .bg-dark {
+          background: #fffffe; }
+        .theme-dark .sidemenu.open .text-global {
+          color: #ffffff; }
+        .theme-dark .sidemenu.open .bg-global {
+          background: #ffffff; }
+        .theme-dark .sidemenu.open .text-stroke {
+          color: #16161a; }
+        .theme-dark .sidemenu.open .bg-stroke {
+          background: #16161a; }
+        .theme-dark .sidemenu.open .text-invert {
+          color: invert(1); }
+        .theme-dark .sidemenu.open .bg-invert {
+          background: invert(1); } }
 .btn {
   font-size: 14pt;
   padding: .5em 1em;

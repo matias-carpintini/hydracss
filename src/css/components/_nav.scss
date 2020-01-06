@@ -1,5 +1,5 @@
 .nav{
-  padding: 1.5em 2em;
+  padding: .5em 2em;
   font-size: 12pt;
   margin: 0 0 4em 0;
   z-index: 1;
@@ -35,8 +35,10 @@
 .sidemenu{
   padding: 0 2em;
   color: #4a5568;
+  height: 100vh;
+  overflow-y: scroll;
   
-  .menu{  
+  .menu{
     list-style: none;
 
     li{
@@ -71,7 +73,7 @@
 // Mobile
 @media only screen and (max-width: 1026px) {
   .nav{
-    margin: 0 0 1em 0;
+    margin: 0 0 3em 0;
   }
 
   .sidemenu{
@@ -81,9 +83,12 @@
     &.open{
       padding: 4em 1em 1em 1em;
       border-bottom: 1px solid #edf2f7;
-      position: fixed;
-      top: 3.5em;
+      top: 4em;
       display: block;
+      
+      @include themify($themes){
+        background: themed('white');
+      }
     }
   }
 }
