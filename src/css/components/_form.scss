@@ -25,7 +25,7 @@
   width: 100%;
 
   @include themify($themes){
-    background: themed('light');
+    background: themed('white');
     color: themed('dark');
   }
 

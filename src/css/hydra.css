@@ -11,9 +11,9 @@
   .theme-light body .bg-black {
     background: #000000; }
   .theme-light body .text-light {
-    color: #fffffe; }
+    color: #F2F1F0; }
   .theme-light body .bg-light {
-    background: #fffffe; }
+    background: #F2F1F0; }
   .theme-light body .text-dark {
     color: #2b2c34; }
   .theme-light body .bg-dark {
@@ -46,9 +46,9 @@
   .theme-dark body .bg-black {
     background: #ffffff; }
   .theme-dark body .text-dark {
-    color: #fffffe; }
+    color: #F2F1F0; }
   .theme-dark body .bg-dark {
-    background: #fffffe; }
+    background: #F2F1F0; }
   .theme-dark body .text-global {
     color: #ffffff; }
   .theme-dark body .bg-global {
@@ -835,9 +835,9 @@ html {
     .theme-light .divider .bg-black {
       background: #000000; }
     .theme-light .divider .text-light {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-light .divider .bg-light {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-light .divider .text-dark {
       color: #2b2c34; }
     .theme-light .divider .bg-dark {
@@ -869,9 +869,9 @@ html {
     .theme-dark .divider .bg-black {
       background: #ffffff; }
     .theme-dark .divider .text-dark {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-dark .divider .bg-dark {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-dark .divider .text-global {
       color: #ffffff; }
     .theme-dark .divider .bg-global {
@@ -1305,9 +1305,9 @@ template {
     .theme-light .nav .bg-black {
       background: #000000; }
     .theme-light .nav .text-light {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-light .nav .bg-light {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-light .nav .text-dark {
       color: #2b2c34; }
     .theme-light .nav .bg-dark {
@@ -1341,9 +1341,9 @@ template {
     .theme-dark .nav .bg-black {
       background: #ffffff; }
     .theme-dark .nav .text-dark {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-dark .nav .bg-dark {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-dark .nav .text-global {
       color: #ffffff; }
     .theme-dark .nav .bg-global {
@@ -1417,9 +1417,9 @@ template {
         .theme-light .sidemenu.open .bg-black {
           background: #000000; }
         .theme-light .sidemenu.open .text-light {
-          color: #fffffe; }
+          color: #F2F1F0; }
         .theme-light .sidemenu.open .bg-light {
-          background: #fffffe; }
+          background: #F2F1F0; }
         .theme-light .sidemenu.open .text-dark {
           color: #2b2c34; }
         .theme-light .sidemenu.open .bg-dark {
@@ -1451,9 +1451,9 @@ template {
         .theme-dark .sidemenu.open .bg-black {
           background: #ffffff; }
         .theme-dark .sidemenu.open .text-dark {
-          color: #fffffe; }
+          color: #F2F1F0; }
         .theme-dark .sidemenu.open .bg-dark {
-          background: #fffffe; }
+          background: #F2F1F0; }
         .theme-dark .sidemenu.open .text-global {
           color: #ffffff; }
         .theme-dark .sidemenu.open .bg-global {
@@ -1512,9 +1512,9 @@ template {
     .theme-light .label .bg-black {
       background: #000000; }
     .theme-light .label .text-light {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-light .label .bg-light {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-light .label .text-dark {
       color: #2b2c34; }
     .theme-light .label .bg-dark {
@@ -1532,7 +1532,7 @@ template {
     .theme-light .label .bg-invert {
       background: invert(0); }
   .theme-dark .label {
-    color: #fffffe; }
+    color: #F2F1F0; }
     .theme-dark .label .text-white {
       color: #000000; }
     .theme-dark .label .bg-white {
@@ -1546,9 +1546,9 @@ template {
     .theme-dark .label .bg-black {
       background: #ffffff; }
     .theme-dark .label .text-dark {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-dark .label .bg-dark {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-dark .label .text-global {
       color: #ffffff; }
     .theme-dark .label .bg-global {
@@ -1573,7 +1573,7 @@ template {
   display: block;
   width: 100%; }
   .theme-light .input, .theme-light .select {
-    background: #fffffe;
+    background: #ffffff;
     color: #2b2c34; }
     .theme-light .input .text-white, .theme-light .select .text-white {
       color: #ffffff; }
@@ -1584,9 +1584,9 @@ template {
     .theme-light .input .bg-black, .theme-light .select .bg-black {
       background: #000000; }
     .theme-light .input .text-light, .theme-light .select .text-light {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-light .input .bg-light, .theme-light .select .bg-light {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-light .input .text-dark, .theme-light .select .text-dark {
       color: #2b2c34; }
     .theme-light .input .bg-dark, .theme-light .select .bg-dark {
@@ -1604,8 +1604,8 @@ template {
     .theme-light .input .bg-invert, .theme-light .select .bg-invert {
       background: invert(0); }
   .theme-dark .input, .theme-dark .select {
-    background: #2b2c34;
-    color: #fffffe; }
+    background: #000000;
+    color: #F2F1F0; }
     .theme-dark .input .text-white, .theme-dark .select .text-white {
       color: #000000; }
     .theme-dark .input .bg-white, .theme-dark .select .bg-white {
@@ -1619,9 +1619,9 @@ template {
     .theme-dark .input .bg-black, .theme-dark .select .bg-black {
       background: #ffffff; }
     .theme-dark .input .text-dark, .theme-dark .select .text-dark {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-dark .input .bg-dark, .theme-dark .select .bg-dark {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-dark .input .text-global, .theme-dark .select .text-global {
       color: #ffffff; }
     .theme-dark .input .bg-global, .theme-dark .select .bg-global {
@@ -1652,7 +1652,7 @@ template {
   padding: 2em; }
   .theme-light .card {
     color: #2b2c34;
-    background: #fffffe; }
+    background: #F2F1F0; }
     .theme-light .card .text-white {
       color: #ffffff; }
     .theme-light .card .bg-white {
@@ -1662,9 +1662,9 @@ template {
     .theme-light .card .bg-black {
       background: #000000; }
     .theme-light .card .text-light {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-light .card .bg-light {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-light .card .text-dark {
       color: #2b2c34; }
     .theme-light .card .bg-dark {
@@ -1682,7 +1682,7 @@ template {
     .theme-light .card .bg-invert {
       background: invert(0); }
   .theme-dark .card {
-    color: #fffffe;
+    color: #F2F1F0;
     background: #2b2c34; }
     .theme-dark .card .text-white {
       color: #000000; }
@@ -1697,9 +1697,9 @@ template {
     .theme-dark .card .bg-black {
       background: #ffffff; }
     .theme-dark .card .text-dark {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-dark .card .bg-dark {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-dark .card .text-global {
       color: #ffffff; }
     .theme-dark .card .bg-global {
@@ -1762,7 +1762,7 @@ template {
   border-radius: .2em;
   overflow-y: auto; }
   .theme-light .modal-container {
-    background: #fffffe; }
+    background: #F2F1F0; }
     .theme-light .modal-container .text-white {
       color: #ffffff; }
     .theme-light .modal-container .bg-white {
@@ -1772,9 +1772,9 @@ template {
     .theme-light .modal-container .bg-black {
       background: #000000; }
     .theme-light .modal-container .text-light {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-light .modal-container .bg-light {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-light .modal-container .text-dark {
       color: #2b2c34; }
     .theme-light .modal-container .bg-dark {
@@ -1806,9 +1806,9 @@ template {
     .theme-dark .modal-container .bg-black {
       background: #ffffff; }
     .theme-dark .modal-container .text-dark {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-dark .modal-container .bg-dark {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-dark .modal-container .text-global {
       color: #ffffff; }
     .theme-dark .modal-container .bg-global {
@@ -1860,9 +1860,9 @@ template {
     .theme-light .modal-content .bg-black {
       background: #000000; }
     .theme-light .modal-content .text-light {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-light .modal-content .bg-light {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-light .modal-content .text-dark {
       color: #2b2c34; }
     .theme-light .modal-content .bg-dark {
@@ -1880,7 +1880,7 @@ template {
     .theme-light .modal-content .bg-invert {
       background: invert(0); }
   .theme-dark .modal-content {
-    color: #fffffe; }
+    color: #F2F1F0; }
     .theme-dark .modal-content .text-white {
       color: #000000; }
     .theme-dark .modal-content .bg-white {
@@ -1894,9 +1894,9 @@ template {
     .theme-dark .modal-content .bg-black {
       background: #ffffff; }
     .theme-dark .modal-content .text-dark {
-      color: #fffffe; }
+      color: #F2F1F0; }
     .theme-dark .modal-content .bg-dark {
-      background: #fffffe; }
+      background: #F2F1F0; }
     .theme-dark .modal-content .text-global {
       color: #ffffff; }
     .theme-dark .modal-content .bg-global {
@@ -2056,7 +2056,7 @@ table {
     border-bottom: 1px solid #e5e5e5; }
     .theme-light .list-striped li:nth-of-type(odd) {
       color: #000000;
-      background: #fffffe; }
+      background: #F2F1F0; }
       .theme-light .list-striped li:nth-of-type(odd) .text-white {
         color: #ffffff; }
       .theme-light .list-striped li:nth-of-type(odd) .bg-white {
@@ -2066,9 +2066,9 @@ table {
       .theme-light .list-striped li:nth-of-type(odd) .bg-black {
         background: #000000; }
       .theme-light .list-striped li:nth-of-type(odd) .text-light {
-        color: #fffffe; }
+        color: #F2F1F0; }
       .theme-light .list-striped li:nth-of-type(odd) .bg-light {
-        background: #fffffe; }
+        background: #F2F1F0; }
       .theme-light .list-striped li:nth-of-type(odd) .text-dark {
         color: #2b2c34; }
       .theme-light .list-striped li:nth-of-type(odd) .bg-dark {
@@ -2101,9 +2101,9 @@ table {
       .theme-dark .list-striped li:nth-of-type(odd) .bg-black {
         background: #ffffff; }
       .theme-dark .list-striped li:nth-of-type(odd) .text-dark {
-        color: #fffffe; }
+        color: #F2F1F0; }
       .theme-dark .list-striped li:nth-of-type(odd) .bg-dark {
-        background: #fffffe; }
+        background: #F2F1F0; }
       .theme-dark .list-striped li:nth-of-type(odd) .text-global {
         color: #ffffff; }
       .theme-dark .list-striped li:nth-of-type(odd) .bg-global {
