@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .theme-light body {
   color: #000000;
   background-color: #ffffff; }
@@ -1929,6 +1930,77 @@ template {
     transform: translateY(0); }
   to {
     transform: translateY(-10%); } }
+table {
+  border-collapse: collapse; }
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top; }
+  .table th, .table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #dee2e6; }
+  .table tbody {
+    vertical-align: inherit; }
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom-color: #495057; }
+  .table tbody + tbody {
+    border-top: 2px solid #dee2e6; }
+
+/*Cambiar tamaño de tablas con class table-sm*/
+.table-sm th, .table-sm td {
+  padding: 0.25rem; }
+
+/*Añde un hover sobre la clase table*/
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075); }
+
+/*table-primary- Tabla primaria*/
+.table-primary {
+  background-color: #6246ea;
+  color: #ffffff; }
+  .table-primary > th, .table-primary > td {
+    background-color: #6246ea;
+    color: #ffffff; }
+  .table-primary th, .table-primary td, .table-primary thead th, .table-primary tbody + tbody {
+    border-color: #ffffff; }
+
+.table-hover .table-primary:hover {
+  background-color: #212529; }
+  .table-hover .table-primary:hover > td, .table-hover .table-primary:hover > th {
+    background-color: #212529; }
+
+/*table-secondary- Tabla Secundaria*/
+.table-secondary {
+  background-color: #d1d1e9; }
+  .table-secondary > th, .table-secondary > td {
+    background-color: #d1d1e9; }
+  .table-secondary th, .table-secondary td, .table-secondary thead th, .table-secondary tbody + tbody {
+    border-color: #212529; }
+
+.table-hover .table-secondary:hover {
+  background-color: #212529; }
+  .table-hover .table-secondary:hover > td, .table-hover .table-secondary:hover > th {
+    background-color: #212529; }
+
+/*table-danger- Tabla de Peligro*/
+.table-danger {
+  background-color: #e45858;
+  color: #ffffff; }
+  .table-danger > th, .table-danger > td {
+    background-color: #e45858;
+    color: #ffffff; }
+  .table-danger th, .table-danger td, .table-danger thead th, .table-danger tbody + tbody {
+    border-color: #ffffff; }
+
+.table-hover .table-danger:hover {
+  background-color: #212529; }
+  .table-hover .table-danger:hover > td, .table-hover .table-danger:hover > th {
+    background-color: #212529; }
+
 .article .article-title {
   font-size: 2.625rem;
   line-height: 1;
