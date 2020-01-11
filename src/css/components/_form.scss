@@ -4,24 +4,30 @@
 
 .label{
   font-size: 12pt;
-  color: $dark;
   font-weight: bold;
   display: block;
   margin: 0 0 .5em 0;
+
+  @include themify($themes){
+    color: themed('dark');
+  }
 }
 
 .input, .select{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: transparent;
   font-size: 12pt;
   padding: .5em;
   border: .1em solid map-get($colors, 'secondary');
   border-radius: .2em;
-  color: $dark;
   display: block;
   width: 100%;
+
+  @include themify($themes){
+    background: themed('light');
+    color: themed('dark');
+  }
 
   &:focus{
     border: .1em solid map-get($colors, 'primary');

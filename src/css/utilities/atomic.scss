@@ -1501,6 +1501,14 @@ sup {
   text-align: right;
 }
 
+.no-decoration {
+  text-decoration: none;
+  
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 .line-through, .delete {
   text-decoration: line-through;
 }

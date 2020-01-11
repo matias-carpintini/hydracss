@@ -1,11 +1,14 @@
 .card{
   width: 100%;
-  background: map-get($colors, 'secondary');
-  color: $dark;
   font-size: 12pt;
   margin: 1em 0;
   border-radius: .2em;
   padding: 2em;
+
+  @include themify($themes){
+    color: themed('dark');
+    background: themed('light');
+  }
 
   .headline{
     font-size: 24pt;

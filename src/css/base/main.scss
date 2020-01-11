@@ -29,6 +29,11 @@ pre > code {
   &:hover{
     color: #4a5568;
   }
+
+  &.large{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 .mobile{
@@ -70,14 +75,7 @@ a:active,
 a:hover { outline: none; }
 
 a {
-  color: $base-link-color;
-  text-decoration: $base-link-text-decoration;
   cursor: pointer;
-
-  &:hover {
-    color: $base-link-hover-color;
-    text-decoration: $base-link-hover-text-decoration;
-  }
 }
 
 
