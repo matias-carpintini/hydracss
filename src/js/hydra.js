@@ -1,46 +1,55 @@
-$(document).ready(function(){
-  // Se lee el theme de LocalStorage y se agrega la clase css a la etiqueta html
-  current_theme = localStorage.getItem("theme") ? localStorage.getItem("theme") : "theme-light";
-  $('html').addClass(current_theme);
-  
-  $('.modal-open').on('click', function(ev){
-    ev.preventDefault();
-    modalId = $(this).data('modal-id');
-    modal = document.getElementById(modalId);
+"use strict"
 
-    $(modal).attr('aria-hidden', 'false');
-    modal.classList.add('is-open');
+document.addEventListener('DOMContentLoaded', function () {
+  const $html = document.querySelector('html');
+
+  const current_theme = localStorage.getItem("theme") ? localStorage.getItem("theme") : "theme-light";
+  $html.classList.add(current_theme);
+
+  document.querySelectorAll('.modal-open').forEach(elem => {
+    elem.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const modalID = this.dataset.modalId;
+      const $modal = document.getElementById(modalID);
+
+      $modal.setAttribute('aria-hidden', 'false')
+      $modal.classList.add('is-open');
+    });
   });
 
-  $('.modal-close').on('click', function(ev){
-    ev.preventDefault();
-    modalId = $(this).closest('.modal').attr('id');
-    modal = document.getElementById(modalId);
+  document.querySelectorAll('.modal-close').forEach(elem => {
+    elem.addEventListener('click', function (event) {
+      event.preventDefault();
 
-    $(modal).attr('aria-hidden', 'true');
-    // Remove with await time for run css animation
-    setTimeout(function(){
-      modal.classList.remove('is-open');
-    }, 300)
-  });
+      const modalID = this.closest('.modal').getAttribute('id');
+      const $modal = document.getElementById(modalID);
 
+      $modal.setAttribute('aria-hidden', 'true');
 
-  $('.sidemenu-trigger').on('click', function(ev){
-    ev.preventDefault();
-    sidemenuId = $(this).data('sidemenu-id');
-    sidemenu = document.getElementById(sidemenuId);
+      setTimeout(function () {
+        $modal.classList.remove('is-open');
+      }, 300);
+    });
+  })
 
-    $(sidemenu).toggleClass('open');
-  });
+  document.querySelector('.sidemenu-trigger').addEventListener('click', function (event) {
+    event.preventDefault();
 
-  $('#switch').on('click', function(ev){
-    ev.preventDefault();
+    const sidemenuID = this.dataset.sidemenuId;
+    const $sidemenu = document.getElementById(sidemenuID);
 
-    current_theme = $('html').hasClass('theme-dark') ? 'theme-dark' : 'theme-light';
-    new_theme = current_theme == 'theme-dark' ? 'theme-light' : 'theme-dark'
-    
-    // Se guarda el theme en LocalStorage después de cada cambio
+    $sidemenu.classList.toggle('open');
+  })
+
+  document.getElementById('switch').addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const current_theme = $html.classList.contains('theme-dark') ? 'theme-dark' : 'theme-light';
+    const new_theme = current_theme == 'theme-dark' ? 'theme-light' : 'theme-dark'
+
     localStorage.setItem('theme', new_theme);
-    $('html').removeClass(current_theme).addClass(new_theme);
+    $html.classList.remove(current_theme);
+    $html.classList.add(new_theme);
   });
 });
